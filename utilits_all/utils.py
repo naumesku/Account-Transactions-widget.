@@ -1,4 +1,5 @@
 import json
+
 def prepares_data_operations(path, number):
     '''Возвращает отсортированный список подготовленных операций по заданному количеству извлекая данные из json-файла'''
     #Загружает словарь с данными по всем опрациям из json-файла
@@ -37,4 +38,3 @@ def disguise_accounts(operation_to, operation_from=None):
         from_mask_end = ""
 
     return(f"{from_mask_beg} {from_mask_end} -> {to_mask_beg} {to_mask_end}")
-
